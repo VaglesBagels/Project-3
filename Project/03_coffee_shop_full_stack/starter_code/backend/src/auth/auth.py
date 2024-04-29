@@ -21,7 +21,6 @@ class AuthError(Exception):
 
 
 ## Auth Header
-
 '''
 @TODO implement get_token_auth_header() method
     it should attempt to get the header from the request
