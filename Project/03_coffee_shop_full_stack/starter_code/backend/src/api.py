@@ -44,8 +44,6 @@ def get_drinks():
             "message": "Internal Server Error"
         }), 500
 
-
-
 '''
 @DONE implement endpoint
     GET /drinks-detail
@@ -71,8 +69,6 @@ def get_drinks_detail(payload):
             "error": 500,
             "message": "Internal Server Error"
         }), 500
-
-
 
 '''
 @DONE implement endpoint
@@ -105,8 +101,6 @@ def create_drink(payload):
             "error": 500,
             "message": "Internal Server Error"
         }), 500
-
-
 
 '''
 @DONE implement endpoint
