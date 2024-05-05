@@ -4,13 +4,14 @@ from functools import wraps
 from jose import jwt
 from urllib.request import urlopen
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 
 
-AUTH0_DOMAIN = 'dev-fullstack.au.auth0.com'
-ALGORITHMS = ['RS256']
-API_AUDIENCE = 'https://coffee'
+AUTH0_DOMAIN = os.getenv('DOMAIN')
+ALGORITHMS = os.getenv('ALGORITHM')
+API_AUDIENCE = os.getenv('API_AUDIENCE')
 
 ## AuthError Exception
 '''
